@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_namu_automation_jhttp_1742013672351-pr-trigger-input-set
+  identifier: Build_namu_automation_jhttp_1742013672351prtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: Build_namu_automation_jhttp_1742013672351
+    properties:
+      ci:
+        codebase:
+          build:
+            type: PR
+            spec:
+              number: <+trigger.prNumber>
