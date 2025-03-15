@@ -36,7 +36,7 @@ pipeline:
                     shell: Sh
                     command: |-
                       echo "Running Tests"
-                      mvn test -Dtest=HttpClientTest
+                      mvn test -Dtest=io.harness.jhttp.functional.HttpClientTest
           platform:
             arch: Amd64
             os: Linux
