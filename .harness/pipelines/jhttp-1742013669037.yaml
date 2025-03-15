@@ -28,6 +28,15 @@ pipeline:
                     command: |-
                       echo "Welcome to Harness CI"
                       mvn -B package --file pom.xml
+              - step:
+                  type: Run
+                  identifier: run_tests
+                  name: Run Tests
+                  spec:
+                    shell: Sh
+                    command: |-
+                      echo "Running Tests"
+                      mvn test -Dtest=HttpClientTest
           platform:
             arch: Amd64
             os: Linux
